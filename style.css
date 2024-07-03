@@ -1,0 +1,93 @@
+body * {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    font-family: monospace;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#instructions,
+#instructions * {
+    flex-direction: column;
+}
+
+#instructions {
+    color: lightgray;
+    background-color: midnightblue;
+    max-width: 200px;
+    border: 5px groove yellow;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+#container > div:nth-child(3n) {
+    border-bottom: 1px solid black;
+}
+
+#container > div:nth-child(3n+1) {
+    border-top: 1px solid black;
+}
+
+#container > div > div:nth-child(3n) {
+    border-right: 1px solid black !important;
+}
+
+#container > div > div:nth-child(3n+1) {
+    border-left: 1px solid black !important;
+}
+
+#container {
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+}
+
+.normalSquare {
+    background-color: lightgray;
+}
+
+.selectedSquare {
+    background-color: darkgray;
+}
+
+.solvedSquare {
+    color: green;
+}
+
+button {
+    margin: 0;
+    height: 80px;
+    width: 80px;
+    font-size: 36px;
+}
+
+#buttons {
+    flex-direction: column;
+    border: 5px double dimgray;
+    border-radius: 10px;
+}
+
+#clear,
+#reset {
+    width: 120px;
+}
+
+#solve {
+    width: 240px;
+}
